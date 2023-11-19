@@ -9,6 +9,15 @@ namespace Pizza_Galkin.classes
     public class Dish
     {
         public int id;
+        public string name;
+        public List<Sizes> sizes = new List<Sizes>();
+        public string img;
+        public List<Ingredient> ingredients = new List<Ingredient>();
+    }
+
+    public class Sizes
+    {
+        public int id;
         public int id_size;
         public int size;
         public int price;
@@ -16,5 +25,15 @@ namespace Pizza_Galkin.classes
 
         public int countOrder;
         public bool orders;
+    }
+    public class Ingredient
+    {
+        public int id;
+        public string name;
+        public int wes;
+        public int price;
+
+        public string img;
+        public int count;
     }
 }
